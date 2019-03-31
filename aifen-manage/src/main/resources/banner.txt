@@ -1,0 +1,20 @@
+${AnsiColor.BRIGHT_YELLOW}
+     _      ___   _____   _____   _   _
+    / \    |_ _| |  ___| | ____| | \ | |
+   / _ \    | |  | |_    |  _|   |  \| |
+  / ___ \   | |  |  _|   | |___  | |\  |
+ /_/   \_\ |___| |_|     |_____| |_| \_|
+
+${AnsiColor.BRIGHT_CYAN}
+  __  __      _      _   _      _       ____   _____
+ |  \/  |    / \    | \ | |    / \     / ___| | ____|
+ | |\/| |   / _ \   |  \| |   / _ \   | |  _  |  _|
+ | |  | |  / ___ \  | |\  |  / ___ \  | |_| | | |___
+ |_|  |_| /_/   \_\ |_| \_| /_/   \_\  \____| |_____|
+
+${AnsiColor.BRIGHT_BLUE}
+::: Project (version:${application.version}) :::  ＼(^O^)／ Spring-Boot  ${spring-boot.version}${spring-boot.formatted-version}
+是，程序员设计了程序，还是，程序造就了程序员？程序，程序员——你的名字，我的姓氏
+
+${AnsiColor.BRIGHT_GREEN}
+
