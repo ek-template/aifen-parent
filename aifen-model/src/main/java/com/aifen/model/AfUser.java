@@ -1,4 +1,4 @@
-package com.aifen.model.vo;
+package com.aifen.model;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -15,32 +15,27 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author qierkang xyqierkang@163.com
- * @since 2019-03-31
+ * @since 2019-04-07
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class SysMgrUserVo extends BaseVO implements Serializable {
+public class AfUser implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "user_id", type = IdType.AUTO)
-    private Long userId;
-
-    /**
-     * 用户姓名
-     */
-    private String userRealname;
+    @TableId(value = "id", type = IdType.AUTO)
+    private Long id;
 
     /**
      * 登陆用户名
      */
-    private String userLoginname;
+    private String userName;
 
     /**
      * 登陆密码
      */
-    private String userPassword;
+    private String userPwd;
 
     /**
      * 用户状态0 - 禁用
@@ -49,14 +44,9 @@ public class SysMgrUserVo extends BaseVO implements Serializable {
     private String userStatus;
 
     /**
-     * 用户工号
-     */
-    private String userEmpno;
-
-    /**
      * 用户联系方式
      */
-    private String userCellphone;
+    private String userPhone;
 
     /**
      * 用户邮箱
@@ -64,29 +54,14 @@ public class SysMgrUserVo extends BaseVO implements Serializable {
     private String userEmail;
 
     /**
-     * 0 - 总裁办
-1 - 技术部
-2 - 运营部
-3 - 财务部
-4 - 市场部
-5 - 行政部
-6 - 人事部
+     * 0 - 管理员
+1 - 运营人员
      */
     private String userDept;
 
     private LocalDateTime createTime;
 
     private LocalDateTime updateTime;
-
-    /**
-     * 创建人
-     */
-    private Long createUser;
-
-    /**
-     * 修改人
-     */
-    private Long updateUser;
 
 
 }

@@ -1,6 +1,6 @@
 package com.aifen.dao;
 
-import com.aifen.model.SysMgrUser;
+import com.aifen.model.AfUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author qierkang xyqierkang@163.com
- * @since 2019-03-31
+ * @since 2019-04-07
  */
-public interface SysMgrUserMapper extends BaseMapper<SysMgrUser> {
+public interface AfUserMapper extends BaseMapper<AfUser> {
 
 }

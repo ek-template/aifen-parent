@@ -7,11 +7,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @author qierkang xyqierkang@163.com
- * @Title: StringToDateConverter.java
- * @Package com.fintech.handler
- * @date 2018年6月12日 上午3:29:51
- * @Description: TODO[ 用一句话描述该文件做什么 ]
+ * @Title StringToDateConverter
+ * @Author     qierkang xyqierkang@163.com
+ * @Date       Created in 2019-04-07 15:19
+ * @Description [ 一句话描述是什么作用 ]
  */
 public class StringToDateConverter implements Converter<String, Date> {
 

@@ -9,11 +9,9 @@ package com.aifen.controller;
 
 
 import com.aifen.aspect.LogUtil;
-import com.aifen.model.SysMgrUser;
-import com.aifen.model.vo.SysMgrUserVo;
+import com.aifen.model.vo.AfUserVo;
 import com.aifen.response.BaseResponse;
-import com.aifen.service.ISysMgrUserService;
-import com.aifen.service.impl.SysMgrUserServiceImpl;
+import com.aifen.service.IAfUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,41 +22,27 @@ import org.springframework.web.bind.annotation.*;
  * </p>
  *
  * @author qierkang xyqierkang@163.com
- * @since 2019-03-31
+ * @since 2019-04-07
  */
 @RestController
 @RequestMapping(value = {"/sys/mgr/user"}, method = {RequestMethod.GET, RequestMethod.POST}, consumes = {"*/*"}, produces = {"application/json"})
 @Slf4j
-public class SysMgrUserController {
+public class AfUserController {
 
     @Autowired
-    private ISysMgrUserService sysMgrUserService;
+    private IAfUserService afUserService;
 
     @GetMapping("list")
     @ResponseBody
-    public BaseResponse list(SysMgrUserVo vo) throws Exception {
+    public BaseResponse list(AfUserVo vo) throws Exception {
         String logMes = "查询用户基本数据";
         try {
             LogUtil.pushLog(logMes, Thread.currentThread().getStackTrace()[1].getMethodName(), vo.toString(), vo.getToken());
-            return BaseResponse.success(sysMgrUserService.list(vo));
+            return BaseResponse.success(afUserService.list(vo));
         } catch (Exception e) {
             e.printStackTrace();
             LogUtil.pushErrorLog(logMes, Thread.currentThread().getStackTrace()[1].getMethodName(), vo.toString(), vo.getToken(), e.getMessage());
             return BaseResponse.error(e.getMessage());
         }
     }
-
-//    @PostMapping("detail")
-//    @ResponseBody
-//    public BaseResponse detail(@RequestBody OrderBaseinfoVo vo) throws Exception {
-//        String logMes = "信审全量查询订单详情";
-//        try {
-//            LogUtil.pushLog(logMes, Thread.currentThread().getStackTrace()[1].getMethodName(), vo.toString(), vo.getToken());
-//            return BaseResponse.success(manageOrderBaseinfoService.selectCdtOrderDetail(vo.getOrderId()));
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            LogUtil.pushErrorLog(logMes, Thread.currentThread().getStackTrace()[1].getMethodName(), vo.toString(), vo.getToken(), e.getMessage());
-//            return BaseResponse.error(e.getMessage());
-//        }
-//    }
 }
