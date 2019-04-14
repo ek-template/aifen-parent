@@ -65,6 +65,8 @@ public class AfUserController {
         }
     }
 
+    @PostMapping("update")
+    @ResponseBody
     public BaseResponse update(AfUserVo vo) throws Exception {
         String logMes = "修改用户";
         try {
