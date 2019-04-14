@@ -23,4 +23,10 @@ public interface IAfUserService extends IService<AfUser> {
      */
     PageInfo<AfUser> list(AfUserVo vo);
 
+
+    int insert(AfUserVo vo);
+
+    int updateById(AfUserVo vo);
+
+
 }

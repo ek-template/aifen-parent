@@ -38,8 +38,7 @@ public class AfUserVo extends BaseVO implements Serializable {
     private String userPwd;
 
     /**
-     * 用户状态0 - 禁用
-1 - 启用
+     * 用户状态0 - 禁用 1 - 启用
      */
     private String userStatus;
 
