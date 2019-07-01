@@ -11,4 +11,4 @@
 - aifen-model：实体模块
 - aifen-util：工具模块
 
-##### API: http://showdoc.qierkang.org
+##### API: https://showdoc.qierkang.org
