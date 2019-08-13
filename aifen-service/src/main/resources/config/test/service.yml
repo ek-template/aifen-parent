@@ -17,7 +17,7 @@ mybatis-plus:
 aifen:
   driver: com.mysql.jdbc.Driver
   dbPassword: aifen
-  dbUrl: jdbc:mysql://47.96.39.75:3306/aifen-test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+  dbUrl: jdbc:mysql://47.100.32.28:3306/aifen-test?useUnicode=true&characterEncoding=utf-8&useSSL=false
   dbUserName: aifen
 
 redis:
