@@ -18,6 +18,10 @@
     <dependencies>
         <dependency>
             <groupId>com.aifen</groupId>
+            <artifactId>aifen-manage</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.aifen</groupId>
             <artifactId>aifen-service</artifactId>
         </dependency>
         <dependency>

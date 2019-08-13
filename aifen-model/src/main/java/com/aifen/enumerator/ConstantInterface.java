@@ -63,6 +63,20 @@ public interface ConstantInterface {
             }
         }
 
+        enum PageConfig{
+            PAGE_SIZE(6),
+            ;
+            private int pageSize;
+
+            PageConfig(int pageSize){
+                this.pageSize = pageSize;
+            }
+
+            public int getPageSize(){
+                return this.pageSize;
+            }
+
+        }
         /**
          * @author qierkang
          * @ClassName: ConstantNumber

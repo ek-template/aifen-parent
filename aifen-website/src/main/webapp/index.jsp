@@ -1,5 +1,10 @@
-<html>
-<body>
-<h2>aifen-website Hello World!</h2>
-</body>
-</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="public/top.jsp"%>
+<%@ include file="public/slide.jsp"%>
+
+<div class="content-wrapper" style="min-height: 3572px;">
+首页
+</div>
+
+<%@ include file="public/bottom.jsp"%>

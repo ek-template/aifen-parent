@@ -26,21 +26,29 @@ public class BaseResponse implements Serializable {
     private static final long serialVersionUID = 7431264204510322466L;
 
 
-    public static final String SUCCESS_CODE = "000000"; // 请求成功code
+    // 请求成功code
+    public static final String SUCCESS_CODE = "000000";
 
-    public static final String SUCCESS_CODE_MSG = "操作成功";//请求成功mes
+    //请求成功mes
+    public static final String SUCCESS_CODE_MSG = "操作成功";
 
-    public static final String ERROR_CODE = "999999";//系统错误 code
+    //系统错误 code
+    public static final String ERROR_CODE = "999999";
 
-    public static final String ERROR_CODE_MSG = "系统错误";//系统错误 mes
+    //系统错误 mes
+    public static final String ERROR_CODE_MSG = "系统错误";
 
-    public static final String ERROR_REQ_FAIL_CODE = "999998";//请求失败 code
+    //请求失败 code
+    public static final String ERROR_REQ_FAIL_CODE = "999998";
 
-    public static final String ERROR_REQ_FAIL_MSG = "请求失败";//请求失败 mes
+    //请求失败 mes
+    public static final String ERROR_REQ_FAIL_MSG = "请求失败";
 
-    public static final String ERROR_PDP_CODE = "999997";//业务抛出异常 code
+    //业务抛出异常 code
+    public static final String ERROR_PDP_CODE = "999997";
 
-    public static final String ERROR_PDP_CODE_MSG = "业务抛出异常";//业务抛出异常 mes
+    //业务抛出异常 mes
+    public static final String ERROR_PDP_CODE_MSG = "业务抛出异常";
 
     public static final String ERROR_NO_PERM_CODE = "000001";
 

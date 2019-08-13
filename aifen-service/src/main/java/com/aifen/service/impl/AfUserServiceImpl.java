@@ -1,6 +1,7 @@
 package com.aifen.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.util.ObjectUtil;
 import com.aifen.dao.AfUserMapper;
 import com.aifen.model.AfUser;
 import com.aifen.model.vo.AfUserVo;
@@ -35,4 +36,20 @@ public class AfUserServiceImpl extends ServiceImpl<AfUserMapper, AfUser> impleme
         PageInfo<AfUser> pageLists = new PageInfo<>(list);
         return pageLists;
     }
+
+    @Override
+    public int insert(AfUserVo vo) {
+        Map<String, Object> params = BeanUtil.beanToMap(vo);
+        AfUser afUser = BeanUtil.mapToBean(params, AfUser.class, true);
+        return baseMapper.insert(afUser);
+    }
+
+    @Override
+    public int updateById(AfUserVo vo) {
+        Map<String, Object> params = BeanUtil.beanToMap(vo);
+        AfUser afUser = BeanUtil.mapToBean(params, AfUser.class, true);
+        return baseMapper.updateById(afUser);
+    }
+
+
 }

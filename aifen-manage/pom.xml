@@ -13,7 +13,6 @@
     <description>爱芬 * 配置中心服务 * 业务模块流程层</description>
     <url>https://blog.csdn.net/qierkang</url>
 
-
     <dependencies>
         <dependency>
             <groupId>com.aifen</groupId>
